@@ -1,0 +1,23 @@
+{
+  "name": "sslpinning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "https_server.js",
+  "scripts": {
+    "start": "node https_server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratakkas/sslpinning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muratakkas/sslpinning/issues"
+  },
+  "homepage": "https://github.com/muratakkas/sslpinning#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
