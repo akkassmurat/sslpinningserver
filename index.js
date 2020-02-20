@@ -1,6 +1,15 @@
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write('Hello World!');
-  res.end();
-}).listen(80);
+var express = require('express');
+var app = express();
+
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
+  
+
+// set the home page route
+app.get('/', (req, res) => res.send('Hello World!'))
+
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
